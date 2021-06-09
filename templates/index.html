@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/d7d32996a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="main">
+        <nav class="nav-box">
+            <a href="#" class="logo">ems</a>
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon"><span></span></label>
+            <div class="menu">        
+                <ul class="navigation">
+                    <li class="nav" id="nav1"><a href="#content">intro</a></li>
+                    <li class="nav" id="nav2"><a href="#main-text">about</a></li>
+                    <li class="nav" id="nav3"><a href="#products">shop</a></li>
+                    <li id="cart"><i class="fas fa-cart-plus"><span id="cart-numb">0</span></i></li>
+                </ul>       
+            </div>    
+        </nav>
+        <section class="form-container" id="form-container">
+            <article id="cart-items">
+                <div class="form-header" id="form-header">
+                    <span id="sn" class="serial-num-head">s/n</span>
+                    <span id="item" class="item-title-head">item</span>
+                    <span id="pric" class="item-price-head">price</span>
+                    <span id="quantity" class="item-quantity-head">quantity</span>
+                    <span class="remove-btn-head"></span>
+                </div>
+            </article>  
+            <div>
+                <form class="form" id="paymentForm">
+                    <input class="input" type="text" id="input_name" placeholder= "Enter your name" value="" required>
+                    <p class="error-message" id="name-error"></p>
+                    <br>
+                    <input class="input" type="email" id="email" minlength="5" placeholder="Your email" required>
+                    <p class="error-message" id="mail-error"></p>
+                    <br>
+                    <input class="input" type="tel" id="tel" placeholder="Your phone number" required>
+                    <p class="error-message" id="phone-error"></p>
+                    <br>
+                    <strong>Total Amount to be Paid</strong>
+                    <p id="amount">0</p>
+                    <div class="button">
+                        <button class="check" type="submit" id="checkout">checkout</button>
+                    </div>
+                </form>
+                <div class="button">
+                    <button id="cont-shop">continue shopping</button>
+                </div>    
+            </div>
+        </section>
+        <section class="summary-page">
+            <article id="summary-header">
+                <h2>Thank you, <span id="customer_name"></span>.Your Order Has been Received</h2>
+            </article>
+            <article id="summary-logo">
+                <img src="/images/check.png" alt="Image showing check mark" id="summary-image">
+            </article>
+            <article id="summary">
+                <div id="summary-title">
+                    <h3>Summary</h3>
+                </div>    
+                <ul class="summary-container">
+                    <div class="summary-top">
+                        <li id="summary-serial-numb">S/N</li>
+                        <li id="summary-items">Items</li>
+                        <li id="summary-quantity">Quantity</li>
+                    </div>
+                    <div class="summary-main"></div>    
+                </ul>
+                <div class="close-button">
+                    <button id="ok-button">OK</button>
+                </div>
+            </article>        
+        </section>
+        <header id="content" >
+            <section class="tech-img" id="image">
+                <img src="/images/tech-png.png" alt="">
+            </section>
+            <section class="heading-text">
+                <h1>the e-millenial tech hub</h1>
+                <code>Your number one stop for anything tech...</code>
+                <br>
+                <button id="shop"><a href="#products">Shop now</a></button>
+            </section>    
+        </header>
+        <aside id="main-text">
+            <p> 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut maxime voluptate et minus mollitia accusantium animi iure, soluta perspiciatis tempora ullam quod temporibus ex distinctio dolor molestiae, 
+                voluptates officiis quidem cum, suscipit iste? Sit repellat, placeat assumenda repudiandae exercitationem magni! Quaerat, ratione mollitia. Nemo, delectus facilis laboriosam soluta dignissimos sunt cum explicabo minus inventore eius. Consequatur deleniti incidunt modi exercitationem, laboriosam blanditiis 
+                culpa repellendus fugit eum dolorem atque, nisi vel. Accusantium dicta assumenda quis a, corrupti nemo vel ut similique quia perferendis ea nulla ad optio quasi suscipit aspernatur! Voluptatem maiores nam tempore inventore impedit corrupti exercitationem laborum architecto fuga.
+            </p>    
+        </aside>
+        <main id="products">
+            <section id="products-heading">
+                <h2 id="our-gadgets">our gadgets</h2>
+            </section>
+            <section id="box-container">
+                <span>
+                    <div id="gadget1" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#500,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">samsung tv</h3>
+                </span>
+                <span>
+                    <div id="gadget2" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#250,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">pixel 4<span id="lower">a</span></h3>
+                </span>  
+                <span>
+                    <div id="gadget3" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#300,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">ps 5</h3>
+                </span>
+                <span>
+                    <div id="gadget4" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#800,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">MacBook Pro</h3>
+                </span>
+                <span>
+                    <div id="gadget5" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#80,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">Apple Watch Series 5</h3>
+                </span>
+                <span>
+                    <div id="gadget6" class="gadgets">
+                            <div class="price">
+                                <p>price</p>
+                                <p class="amount">#50,000</p>
+                            </div>    
+                            <button class="add-to-cart">add to cart</button>  
+                    </div>  
+                    <h3 class="title">Apple AirPods</h3>
+                </span>
+            </section>
+        </main>
+    </section>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="../static/js/ecommerce.js"></script>
+</body>
+<footer id= "footer">
+    <a href="#" class="logo">ems</a>
+    <p>Created and Designed by <a href="https://github.com/fobadara" id="fobadara">Fobadara</a></p>
+</footer>
+</html>
