@@ -1,175 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>EMS</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <script src="https://kit.fontawesome.com/d7d32996a4.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section id="main">
-        <nav class="nav-box">
-            <a href="#" class="logo">ems</a>
-            <input type="checkbox" class="menu-btn" id="menu-btn">
-            <label for="menu-btn" class="menu-icon"><span></span></label>
-            <div class="menu">        
-                <ul class="navigation">
-                    <li class="nav" id="nav1"><a href="#content">intro</a></li>
-                    <li class="nav" id="nav2"><a href="#main-text">about</a></li>
-                    <li class="nav" id="nav3"><a href="#products">shop</a></li>
-                    <li id="cart"><i class="fas fa-cart-plus"><span id="cart-numb">0</span></i></li>
-                </ul>       
-            </div>    
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Fobadara's Portfolio</title>
+    </head>
+    <body>
+        <nav class="container navigation">
+            <div class="welcome">Welcome</div>
+            <ul class="nav-list-cont">
+                <li class="trans"><a href="#portfolio">Portfolio</a></li>
+                <li class="trans"><a href="#about">About</a></li>
+                <li class="trans"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><img src="images/ham.svg" alt=""></div>
         </nav>
-        <section class="form-container" id="form-container">
-            <article id="cart-items">
-                <div class="form-header" id="form-header">
-                    <span id="sn" class="serial-num-head">s/n</span>
-                    <span id="item" class="item-title-head">item</span>
-                    <span id="pric" class="item-price-head">price</span>
-                    <span id="quantity" class="item-quantity-head">quantity</span>
-                    <span class="remove-btn-head"></span>
-                </div>
-            </article>  
-            <div>
-                <form class="form" id="paymentForm">
-                    <input class="input" type="text" id="input_name" placeholder= "Enter your name" value="" required>
-                    <p class="error-message" id="name-error"></p>
-                    <br>
-                    <input class="input" type="email" id="email" minlength="5" placeholder="Your email" required>
-                    <p class="error-message" id="mail-error"></p>
-                    <br>
-                    <input class="input" type="tel" id="tel" placeholder="Your phone number" required>
-                    <p class="error-message" id="phone-error"></p>
-                    <br>
-                    <strong>Total Amount to be Paid</strong>
-                    <p id="amount">0</p>
-                    <div class="button">
-                        <button class="check" type="submit" id="checkout">checkout</button>
-                    </div>
-                </form>
-                <div class="button">
-                    <button id="cont-shop">continue shopping</button>
-                </div>    
+        <header class="header-container top-header">
+            <div class="header-container header-1-container">
+                <h1 class="header header-1" id="hey">Hey there. I'm Abdulfatai. </h1>
+                <h1 class="header header-1" id="job">I'm a software developer</h1>
             </div>
-        </section>
-        <section class="summary-page">
-            <article id="summary-header">
-                <h2>Thank you, <span id="customer_name"></span>.Your Order Has been Received</h2>
-            </article>
-            <article id="summary-logo">
-                <img src="/images/check.png" alt="Image showing check mark" id="summary-image">
-            </article>
-            <article id="summary">
-                <div id="summary-title">
-                    <h3>Summary</h3>
-                </div>    
-                <ul class="summary-container">
-                    <div class="summary-top">
-                        <li id="summary-serial-numb">S/N</li>
-                        <li id="summary-items">Items</li>
-                        <li id="summary-quantity">Quantity</li>
-                    </div>
-                    <div class="summary-main"></div>    
+            <p class="paragraph" id="home-paragraph"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                don’t hestiate to contact me.
+            </p>
+            <address class="container">
+                <ul class="navigation nav-container">
+                    <li class="nav-link-container scale"><a href="https://github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-angellist"></i></a></li>
+                    <li class="nav-link-container scale"><a href="fob90s@twitter.com" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-medium-m"></i></a></li>
                 </ul>
-                <div class="close-button">
-                    <button id="ok-button">OK</button>
-                </div>
-            </article>        
-        </section>
-        <header id="content" >
-            <section class="tech-img" id="image">
-                <img src="/images/tech-png.png" alt="">
-            </section>
-            <section class="heading-text">
-                <h1>the e-millenial tech hub</h1>
-                <code>Your number one stop for anything tech...</code>
-                <br>
-                <button id="shop"><a href="#products">Shop now</a></button>
-            </section>    
+            </address>
+            <div class="action-container">
+                <img src="#" alt="">
+            </div>
         </header>
-        <aside id="main-text">
-            <p> 
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut maxime voluptate et minus mollitia accusantium animi iure, soluta perspiciatis tempora ullam quod temporibus ex distinctio dolor molestiae, 
-                voluptates officiis quidem cum, suscipit iste? Sit repellat, placeat assumenda repudiandae exercitationem magni! Quaerat, ratione mollitia. Nemo, delectus facilis laboriosam soluta dignissimos sunt cum explicabo minus inventore eius. Consequatur deleniti incidunt modi exercitationem, laboriosam blanditiis 
-                culpa repellendus fugit eum dolorem atque, nisi vel. Accusantium dicta assumenda quis a, corrupti nemo vel ut similique quia perferendis ea nulla ad optio quasi suscipit aspernatur! Voluptatem maiores nam tempore inventore impedit corrupti exercitationem laborum architecto fuga.
-            </p>    
-        </aside>
-        <main id="products">
-            <section id="products-heading">
-                <h2 id="our-gadgets">our gadgets</h2>
-            </section>
-            <section id="box-container">
-                <span>
-                    <div id="gadget1" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#500,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">samsung tv</h3>
-                </span>
-                <span>
-                    <div id="gadget2" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#250,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">pixel 4<span id="lower">a</span></h3>
-                </span>  
-                <span>
-                    <div id="gadget3" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#300,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">ps 5</h3>
-                </span>
-                <span>
-                    <div id="gadget4" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#800,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">MacBook Pro</h3>
-                </span>
-                <span>
-                    <div id="gadget5" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#80,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">Apple Watch Series 5</h3>
-                </span>
-                <span>
-                    <div id="gadget6" class="gadgets">
-                            <div class="price">
-                                <p>price</p>
-                                <p class="amount">#50,000</p>
-                            </div>    
-                            <button class="add-to-cart">add to cart</button>  
-                    </div>  
-                    <h3 class="title">Apple AirPods</h3>
-                </span>
-            </section>
+        <main class="main-sec" id="portfolio">
+            <section class="sample-jobs">                   
+                <div class="header-2-container">
+                    <h2 class="header header-2">My Recent Works</h2>
+                </div>
+                <div class="indicator">
+                    <img src="#" alt="" id="indicator">
+                </div>
+                <article class="cards">
+                    <div class="sample-containers">
+                        <div class="sample-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-1">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                    <div class="sample-containers">
+                        <div class="sample-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-2">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt" id="sample-img-2-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                    <div class="sample-containers">
+                        <div class="sample-img-container" id="sample-3-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-3">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt" id="sample-img-3-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                    <div class="sample-containers">
+                        <div class="sample-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-4">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt" id="sample-img4-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                    <div class="container sample-containers">
+                        <div class="sample-img-container" id="sample-5-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-5">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt" id="sample-img-5-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                    <div class="sample-containers">
+                        <div class="sample-img-container" id="sample-6-img-container">
+                            <img src="#" alt="" class="sample-img" id="sample-img-6">
+                        </div>
+                        <div class="sample-img-txt-head-container">
+                            <h3 class="sample-img-head-txt" id="sample-img-6-head-txt">Multi-Post Stories Gain+Glory</h3>
+                        </div>
+                        <ul class="code-lang-container">
+                            <li class="ruby-on-rails">Ruby on rails</li>
+                            <li class="css">css</li>
+                            <li class="js">Javascript</li>
+                            <li class="html">html</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button type="button" class="btn">See Project</button>
+                        </div>
+                    </div>
+                </article>
+            </section>    
         </main>
-    </section>
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="../static/js/ecommerce.js"></script>
-</body>
-<footer id= "footer">
-    <a href="#" class="logo">ems</a>
-    <p>Created and Designed by <a href="https://github.com/fobadara" id="fobadara">Fobadara</a></p>
-</footer>
+        <aside class="aside-container" id="about">
+            <section class="aside-flex">    
+                <div class="header-container-about">
+                    <h2 class="header header-2" id="about-head">About me</h2>
+                </div>
+                <div class="abt-para-cont">
+                    <div class="about-paragraph paragraph">
+                        I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hestiate to contact me.
+                    </div>
+                </div>    
+                <div class="btn-container" id="resume-btn-container">
+                    <button type="button" class="btn" id="resume-btn">Get My Resume</button>
+                </div>
+            </section>     
+        </aside>
+        <div class="skillset">
+            <article class="all-skills">
+                <div class="box-container" id="lang-container">
+                    <div class="logo-container" id="lang-logo-container">
+                        <img src="images/lang.svg" alt="" class="type" id="lang-logo">
+                    </div>
+                    <div class="header-container">
+                        <h3 class="header" id="lang">Languages</h3>
+                    </div>
+                    <ul class="extra code-skill" id="code-lang-list">
+                        <li class="lang">Javascript</li>
+                        <li class="lang">Ruby</li>
+                        <li class="lang">Html</li>
+                        <li class="lang">css</li>
+                    </ul>
+                </div>    
+                <div class="box-container" id="frm-wrk-container">
+                    <div class="logo-container" id="frame-wrk-logo-container">
+                        <img src="images/frameworks.svg" alt="" class="type" id="frame-wrk-logo">
+                    </div>
+                    <div class="header-container">
+                        <h3 class="header">Framework</h3>
+                    </div>
+                    <ul class="extra code-skill" id="frame-wrk-list">
+                        <li class="lang">Bootstrap</li>
+                        <li class="lang">Ruby on rails</li>
+                        <li class="lang">Rspec</li>
+                        <li class="lang">Copybare</li>
+                        <li class="lang">Selenium</li>
+                    </ul>
+                </div>    
+                <div class="box-container" id="skills-container">
+                    <div class="logo-container" id="skills-img-cont">    
+                        <img src="images/skills.svg" alt="" class="type" id="skills-img-logo">
+                    </div>
+                    <div class="header-container" id="skills-header-container">
+                        <h3 class="header" id="header-3">skills</h3>
+                    </div>
+                    <ul class="extra code-skill">
+                        <li class="lang">CodeKit</li>
+                        <li class="lang">Javascript</li>
+                        <li class="lang">Javascript</li>
+                        <li class="lang">Codepen</li>
+                        <li class="lang">Gitlab</li>
+                        <li class="lang">Terminal</li>
+                    </ul>
+                </div>
+            </article>       
+            <article class="container form-sec" id="contact">
+                <div class="last-head-container header">
+                    <h3 class="header-3">
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </h3>    
+                </div>
+                <form action="https://formspree.io/f/xrgraoke" method="post" class="form">
+                    <input name="name" type="text" class="entry" placeholder="Full Name" maxlength="30" required><br>
+                    <input name="email" type="email" class="entry" id="email" placeholder="Please input your email" required><br>
+                    <textarea name="comment" id="comment" maxlength="500" cols="30" rows="10" class="entry" placeholder="Type in something" required></textarea><br>    
+                    <button type="submit" class="btn" id="get-in-touch">Get in touch</button>
+                </form>
+            </article>
+        </div>    
+        <footer class="footer">
+            <address class="container">
+                <ul class="navigation nav-container">
+                    <li class="nav-link-container scale"><a href="https://github.com/fobadara" class="nav-link"><img src="images/github.svg" alt="An image showing Github's logo"></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-angellist"></i></a></li>
+                    <li class="nav-link-container scale"><a href="fob90s@twitter.com" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="nav-link-container scale"><a href="#" class="nav-link"><i class="fab fa-medium-m"></i></a></li>
+                </ul>
+                <span class="mail-container">
+                    <a href="mailto:fob90s@gmail.com?subject=Contact%20Fobadara" class="mail trans">fob90s@gmail.com</a>
+                </span>
+            </address>
+        </footer>
+    </body>
 </html>
