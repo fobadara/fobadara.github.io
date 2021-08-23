@@ -1,13 +1,13 @@
 ## My Portfolio Site
 
-This is my portfolio site showing some of my best works.
+This is my portfolio site showing some of my best works. It is fullly responsive and accessible.
 
 ![screenshot](images/shot1.png)
 ![screenshot](images/shot2.png)
 ![screenshot](images/shot3.png)
 ![screenshot](images/shot4.png)
 
-# <div align="center"><a href="https://fobadara.github.io/my-portfolio-site-2/" text="bold">Live Demo</a></div>
+# <div align="center"><a href="https://fobadara.github.io" text="bold">Live Demo</a></div>
 
 # Description
 
@@ -27,29 +27,29 @@ This is my portfolio site showing some of my best works.
 
 To get a local copy up and running follow these simple example steps.
 
-⬜ clone the app by running this command `git clone https://github.com/fobadara/my-portfolio-site-2.git`
+:pencil2: clone the app by running this command `git clone https://github.com/fobadara/fobadara.github.io.git`
 
-⬜ Run this command `cd my-portfolio-site-2`
+:pencil2: Run this command `cd fobadara.github.io`
 
-⬜ Open in browser
+:pencil2: Open in browser
 
 # Prerequisites
 
 You will be needing:
 
-⬜ A web browser to view output
+:pencil2: A web browser to view output
 
-⬜ A text editor or terminal
+:pencil2: A text editor or terminal
 
 # Run tests
 
 You can run tests by following these steps:
 
-⬜ commit and push your changes
+:pencil2: commit and push your changes
 
-⬜ navigate to pull request
+:pencil2: navigate to pull request
 
-⬜ I have created a pull request which runs linters or you could simply create a pull rrequest of your own
+:pencil2: I have created a pull request which runs linters or you could simply create a pull request of your own
 
 # Authors
 
