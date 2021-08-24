@@ -63,12 +63,20 @@ a {
 }
 
 button {
-  color: #fff;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 1em;
+  border: none;
+  color: #000;
   background-color: #36b37f;
   width: 6.5em;
   height: 3em;
   border-color: #36b37f;
   border-radius: 4px;
+}
+
+.big-btn {
+  width: 10em;
 }
 
 button:hover {
@@ -144,7 +152,7 @@ button:active {
 
 #job {
   margin-top: 0;
-  color: #36b37e;
+  color: #194d39;
   text-align: center;
 }
 
@@ -261,7 +269,7 @@ button:active {
   border: solid #ebf0ee;
   background-color: #ebf0ee;
   border-radius: 4px;
-  color: #36b37e;
+  color: #1a563f;
   width: max-content;
   margin-right: 0.5em;
   padding-right: 0.2em;
@@ -311,16 +319,6 @@ button:active {
   font-size: 20px;
   line-height: 32px;
   font-weight: normal;
-}
-
-.btn {
-  width: 122px;
-  margin-left: 1em;
-  border: none;
-}
-
-footer .btn {
-  width: 159px;
 }
 
 /* skillset */
@@ -374,7 +372,7 @@ footer .btn {
   padding-bottom: 5px;
   border-radius: 8px;
   background-color: #fff;
-  color: #36b37e;
+  color: #1a563f;
 }
 
 #code-lang-list {
